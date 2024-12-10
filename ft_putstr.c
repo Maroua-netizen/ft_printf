@@ -6,20 +6,29 @@
 /*   By: mmounsif <mmounsif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/31 05:48:04 by mmounsif          #+#    #+#             */
-/*   Updated: 2024/12/09 22:45:42 by mmounsif         ###   ########.fr       */
+/*   Updated: 2024/12/10 20:26:21 by mmounsif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putstr(char *s)
+#include "ft_printf.h"
+
+void	ft_putstr(char *s, int *count)
 {
 	int	i;
 
 	if (!s)
-		return ;
-	i = 0;
-	while (s[i])
 	{
-		write(1, &s[i], 1);
-		i++;
+		write(1, "(null)", 6);
+		*count += 6;
+	}
+	else
+	{
+		i = 0;
+		while (s[i])
+		{
+			write(1, &s[i], 1);
+			(*count)++;
+			i++;
+		}
 	}
 }
