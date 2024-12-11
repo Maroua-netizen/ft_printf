@@ -1,34 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_puthex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmounsif <mmounsif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/31 05:48:04 by mmounsif          #+#    #+#             */
-/*   Updated: 2024/12/11 19:46:41 by mmounsif         ###   ########.fr       */
+/*   Created: 2024/09/07 20:03:12 by mmounsif          #+#    #+#             */
+/*   Updated: 2024/12/11 19:38:08 by mmounsif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putstr(char *s, int *count)
+void	ft_puthex(unsigned int n, int i, int *count)
 {
-	int	i;
+	char	*hexa0;
+	char	*hexa1;
 
-	if (!s)
-	{
-		write(1, "(null)", 6);
-		*count += 6;
-	}
-	else
-	{
-		i = 0;
-		while (s[i])
-		{
-			write(1, &s[i], 1);
-			(*count)++;
-			i++;
-		}
-	}
+	hexa0 = "0123456789abcdef";
+	hexa1 = "0123456789ABCDEF";
+	if (n >= 16)
+		ft_puthex(n / 16, i, count);
+	if (i == 0)
+		write(1, &hexa0[n % 16], 1);
+	else if (i == 1)
+		write(1, &hexa1[n % 16], 1);
+	(*count)++;
 }

@@ -6,7 +6,7 @@
 #    By: mmounsif <mmounsif@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/09 22:23:57 by mmounsif          #+#    #+#              #
-#    Updated: 2024/12/10 20:21:33 by mmounsif         ###   ########.fr        #
+#    Updated: 2024/12/11 18:43:11 by mmounsif         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,9 @@ SRC := ft_printf.c\
 		ft_putchar.c\
 		ft_putstr.c\
 		ft_putnbr.c\
+		ft_puthex.c\
+		ft_putunbr.c\
+		ft_putptr.c
 		
 OBJ := $(SRC:%.c=%.o)
 

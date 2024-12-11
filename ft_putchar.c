@@ -6,9 +6,11 @@
 /*   By: mmounsif <mmounsif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 19:07:35 by mmounsif          #+#    #+#             */
-/*   Updated: 2024/12/10 20:22:11 by mmounsif         ###   ########.fr       */
+/*   Updated: 2024/12/11 19:46:35 by mmounsif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 void	ft_putchar(char c, int *count)
 {
