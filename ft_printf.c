@@ -6,7 +6,7 @@
 /*   By: mmounsif <mmounsif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 22:24:58 by mmounsif          #+#    #+#             */
-/*   Updated: 2024/12/11 19:46:13 by mmounsif         ###   ########.fr       */
+/*   Updated: 2024/12/11 20:57:34 by mmounsif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,6 @@ int	ft_printf(const char *format, ...)
 // 	int		count;
 
 // 	count = ft_printf("Hello, %s! %c %d %i %u %x %X %p %%%c\n", 
-// 						"world", 'a', 42, 42, 42, 42, 16, &count, 'a');
+// 						"world", '0', 42, 42, 42, 42, 16, &count, 'a');
 // 	ft_printf("count = %d\n", count);
 // }

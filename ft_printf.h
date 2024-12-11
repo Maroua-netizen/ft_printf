@@ -6,7 +6,7 @@
 /*   By: mmounsif <mmounsif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 22:23:39 by mmounsif          #+#    #+#             */
-/*   Updated: 2024/12/11 18:50:56 by mmounsif         ###   ########.fr       */
+/*   Updated: 2024/12/11 20:54:49 by mmounsif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ void	ft_putnbr(int n, int *count);
 void	ft_puthex(unsigned int n, int i, int *count);
 void	ft_putunbr(unsigned int n, int *count);
 void	ft_putptr(unsigned long long ptr, int *count);
+int		ft_printf(const char *format, ...);
 
 #endif
